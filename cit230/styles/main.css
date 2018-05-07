@@ -4,6 +4,10 @@
 /* * is a wildcard referring to all elements. */
 * { margin: 0; box-sizing: border-box; } 
 
+
+.style1 {margin: 0 auto; border: 1px solid #bbb; padding: 5px; background-color: #eee; line-height: 1.5em;}
+    
+
 body { 
     font-size: 16px; 
     line-height: 32px;
