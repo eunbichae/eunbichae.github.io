@@ -1,11 +1,48 @@
 /* CIT 230 - Assignment Portal CSS Template */
+
 /* You may use #HEX or color names */
 
 /* * is a wildcard referring to all elements. */
-* { margin: 0; box-sizing: border-box; } 
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
 
 
-.style1 {margin: 0 auto; border: 1px solid #bbb; padding: 5px; background-color: #eee; line-height: 1.5em;}
+.style1 {
+    margin: 0 auto;
+    border: 1px solid #bbb;
+    padding: 5px;
+    background-color: #eee;
+    line-height: 1.5em;
+}
+
+.marquee {
+    line-height: 30px;
+    color: Black;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-bottom: 3em;
+}
+
+.marquee p {
+
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 24s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
 
 #siteTitle {
     text-align: center;
@@ -17,10 +54,11 @@
     font-size: 1.2em;
     text-align: center;
 }
-    
+
 nav ul li {
     display: inline;
     list-style: none;
+    
 }
 
 nav a {
@@ -47,12 +85,13 @@ nav a:hover {
 }
 
 
-body { 
-    font-size: 16px; 
+body {
+    font-size: 16px;
     line-height: 32px;
-    font-family:  Ubuntu, sans-serif ;
-    color:  #000000;
+    font-family: Ubuntu, sans-serif;
+    color: #000000;
 }
+
 #frame {
     max-width: 800px;
     margin: 0 auto;
@@ -60,26 +99,32 @@ body {
 
 
 
-#left {
-    width: 400px;
+.left {
+    width: 55%;
     float: left;
 }
 
-#right {
+.right {
     text-align: left;
-    padding-top: 2em;
+    padding-top: 2.7em;
+    height: 300px;
+
+
+
 }
 
 #bottom {
     text-align: center;
+    padding-top: 0.7em
 }
 
 
 h1 {
     font-size: 3.0rem;
-    color:  #ffffff;
+    color: #ffffff;
     padding-top: 0.2rem;
 }
+
 header h2 {
     color: #e8b44f;
 }
@@ -90,13 +135,21 @@ h2 {
     border-bottom: 1px solid #bbb;
 }
 
-header, main, footer {
+h3 {
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+}
+
+header,
+main,
+footer {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 800px;
 }
 
-footer, footer a {
+footer,
+footer a {
     text-align: center;
     background-color: #8F1100;
     height: 50px;
@@ -130,8 +183,13 @@ footer {
     font-size: smaller;
     padding-top: 7px;
 }
+
+.indexUl {
+    padding-top: 1em;
+}
+
 ul li {
     text-align: left;
-   margin: 0 auto;
+    margin: 0 auto;
     max-width: 300px;
 }
