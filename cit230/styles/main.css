@@ -66,6 +66,9 @@ h2 {
     text-align: center;
     border-bottom: 1px solid #bbb;
 }
+.classtitle {
+    text-align: left;
+}
 
 header,
 main,
@@ -111,10 +114,11 @@ footer {
 
 .indexUl {
     padding-top: 1em;
+    padding-left: 1em;
 }
 
 ul li {
     text-align: left;
     margin: 0 auto;
-    max-width: 300px;
+    
 }
