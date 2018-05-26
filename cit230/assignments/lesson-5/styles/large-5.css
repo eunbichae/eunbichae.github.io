@@ -1,0 +1,13 @@
+@media only screen and (min-width: 64em) {
+
+    section.forecast {
+        display: block;
+    }
+    nav ul {
+        display: inline-block;
+    }
+    nav ul li {
+        float: center;
+    }
+}
+

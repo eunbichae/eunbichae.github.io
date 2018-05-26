@@ -1,0 +1,208 @@
+/* Delete these CSS comments after reading. */
+
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+/*
+navy #4d505b
+yellow #ffd464
+kakigray #a6a88e
+redorange #ed5840
+brightgreen #21d881
+*/
+
+body {
+    font-size: 16px;
+    ____________/* Declare the base font-family */
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 960px;
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header,
+main,
+footer {
+    margin: auto;
+}
+
+header h1 {
+    color: #ed5840;
+    padding-top: 45px;
+    padding-bottom: 55px;
+    margin-top: 0;
+    padding-left: auto;
+    background-color: #ffd464;
+    max-height: 250px;
+}
+
+header img {
+    float: left;
+}
+
+
+
+header .subheading {
+    margin: 7px;
+    margin-top: -73px;
+    padding-left: auto;
+    background-color: #ffd464;
+    font-size: 1.1em;
+    margin-left: auto;
+
+    color: #fff;
+
+    font-style: italic;
+
+
+}
+
+nav {
+    background-color: #ed5840;
+    vertical-align: text-bottom;
+    text-align: center;
+    line-height: 2.6em;
+    font-size: 1.1em;
+    margin-top: 1.7em;
+    /*    -3.7*/
+}
+
+nav button {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+nav ul li.active a {}
+
+nav ul li a:hover {}
+
+nav ul {
+    display: block;
+}
+
+main {
+    margin-top: 0 auto;
+    padding-top: 0;
+}
+
+section {
+    margin-bottom: 5px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+main h2 {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+main figure img {}
+
+main img {
+    width: 100%;
+    border: 2px solid #ffffff
+}
+
+main p {
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.center {
+    align-items: center;
+    margin-bottom: auto;
+    margin-top: 10px
+}
+
+.firstrow {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.forecast {
+    display: none;
+    background-color: #ffd464;
+}
+
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: auto;
+    font-size: 1.05em;
+}
+
+
+.left,
+.right {
+    width: 48%;
+    margin-left: 2em;
+    margin-right: 1em;
+    flex: 1;
+    align-items: center;
+    align-content: center;
+
+}
+
+article {
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+footer {
+    background-color: #ed5840;
+    text-align: center;
+    height: 100px;
+    color: #ffffff;
+    padding-top: 30px;
+    margin-top: 5px;
+}
