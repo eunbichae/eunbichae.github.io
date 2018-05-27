@@ -18,7 +18,8 @@ brightgreen #21d881
 
 body {
     font-size: 16px;
-    ____________/* Declare the base font-family */
+    font-family: 'Titillium Web', sans-serif;
+    
 }
 
 header,
@@ -41,7 +42,6 @@ header h1 {
     padding-top: 45px;
     padding-bottom: 55px;
     margin-top: 0;
-    padding-left: auto;
     background-color: #ffd464;
     max-height: 250px;
 }
@@ -55,16 +55,10 @@ header img {
 header .subheading {
     margin: 7px;
     margin-top: -73px;
-    padding-left: auto;
     background-color: #ffd464;
     font-size: 1.1em;
-    margin-left: auto;
-
     color: #fff;
-
     font-style: italic;
-
-
 }
 
 nav {
@@ -103,17 +97,32 @@ nav ul li a {
     padding-left: 1em;
 }
 
-nav ul li.active a {}
 
-nav ul li a:hover {}
+nav a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #a6a88e;
+}
+
+
+nav ul li.active a {
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    background-color: #a6a88e;
+}
+
+
+nav ul li a:hover {
+    
+}
 
 nav ul {
     display: block;
 }
 
 main {
-    margin-top: 0 auto;
-    padding-top: 0;
+    text-align: center;
 }
 
 section {
@@ -126,8 +135,9 @@ main h2 {
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 2em;
+    padding-bottom: 10px;
+    font-size: 2em;
 }
 
 main figure {
@@ -152,7 +162,7 @@ main p {
 
 h3 {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .center {
@@ -161,11 +171,20 @@ h3 {
     margin-top: 10px
 }
 
-.firstrow {
-    display: flex;
-    flex-flow: row wrap;
 
+.sunny {
+    width: 150px;
 }
+
+.icon{
+    color: #ed5840;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-style: italic;
+}
+    
+
 
 .forecast {
     display: none;
@@ -177,21 +196,15 @@ table {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
-    margin-top: auto;
+    margin-top: 20px;
     font-size: 1.05em;
 }
 
-
-.left,
-.right {
-    width: 48%;
-    margin-left: 2em;
-    margin-right: 1em;
-    flex: 1;
+.data {
+    text-align: center;
     align-items: center;
-    align-content: center;
-
 }
+
 
 article {
     padding-top: 20px;
@@ -205,4 +218,12 @@ footer {
     color: #ffffff;
     padding-top: 30px;
     margin-top: 5px;
+}
+
+.contact, .footer-bar {
+    line-height: 20px;
+    font-size: .8em;
+}
+#currentdate {
+    font-size: .8em;
 }
