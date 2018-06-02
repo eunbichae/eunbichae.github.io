@@ -19,8 +19,8 @@
         <h1>The Weather for Tourist</h1>
         <div class="subheading">Good Weather and Fun Places</div>
         <nav>
-            <button>&#9776;</button>
-            <ul>
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
                 <li><a href="#">Home</a></li>
                 <li class="active"><a href="#">Franklin</a></li>
                 <li><a href="#">Greenville</a></li>
@@ -45,7 +45,11 @@
             </div>
 
             <div>
-                <img src="https://images.pexels.com/photos/952632/pexels-photo-952632.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="weatherpic">
+                <img src="images/franlkin-small.jpg" alt="weatherpic"
+                srcset="images/franlkin-large.jpg 1200w,
+                images/franlkin-medium.jpg 800w,
+                images/franlkin-small.jpg 400w"
+                sizes="98vw">
             </div>
         </section>
 
@@ -87,7 +91,7 @@
 
         <article>
             <h3>Franklin Breaks Record</h3>
-            <img src="https://images.pexels.com/photos/348351/pexels-photo-348351.png?auto=compress&cs=tinysrgb&h=350" alt="article">
+            <img src="https://images.pexels.com/photos/952632/pexels-photo-952632.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="article">
 
             <p class="town-article">
             </p>
@@ -96,6 +100,7 @@
 
     </main>
 
+   
     <footer>
         <div class="contact">
             The Weather for Tourist<br>
@@ -107,6 +112,9 @@ contact@theurl.com
         <div class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">May 26 2018</span>
         </div>
     </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    
 
 </body>
 
