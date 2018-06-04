@@ -44,13 +44,20 @@
                 <p>Precipitation: 25%<br> Wind Speed: 15mph</p>
             </div>
 
-            <div>
-                <img src="images/franlkin-small.jpg" alt="weatherpic"
+<!--
+                <img src="images/franklin-small.jpg" alt="weatherpic"
                 srcset="images/franlkin-large.jpg 1200w,
                 images/franlkin-medium.jpg 800w,
                 images/franlkin-small.jpg 400w"
                 sizes="98vw">
-            </div>
+                
+-->
+            <picture>
+                    <source srcset="images/franklin-small.jpg" media="(max-width: 600px)">
+                    <source srcset="images/franklin-medium.jpg" media="(max-width: 1024px)">
+                    <source srcset="images/franklin-large.jpg">
+                    <img src="images/franklin-large.jpg" id="main-image" alt="Franklin image">
+            </picture>
         </section>
 
         <section class="forecast">
