@@ -1,16 +1,16 @@
             var t = 50; //parseFloat(document.getElementById("temperature").value);
             
-             document.getElementById("currentTemperature").innerHTML = t;
+             document.getElementById("currentTemperature").innerHTML=t;
 
             var ws = 10; //parseFloat(document.getElementById("windSpeed").value);
                     
-            document.getElementById("windSpeed").innerHTML = ws;
+            document.getElementById("windSpeed").innerHTML=ws;
             
            
             // Display
              var wc = windChill(t, ws);
             
-            document.getElementById("windChill").innerHTML = wc.toFixed(2);
+            document.getElementById("windChill").innerHTML=wc.toFixed(2);
             
         
         function windChill(tempF, speed) {

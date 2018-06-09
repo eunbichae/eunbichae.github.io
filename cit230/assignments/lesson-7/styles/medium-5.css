@@ -6,10 +6,24 @@
     
     nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
     
-    nav ul li { float: left; }
-    
+/*    nav ul li { float: left; }*/
+ 
     nav ul.hide {
         display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
+    
+    
+    .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+    
+    .description {
+    display: block;
+    text-align: left;
+}
 
 }
