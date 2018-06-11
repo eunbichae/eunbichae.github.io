@@ -230,7 +230,7 @@ article {
 
 
 .description {
-    display: none;
+    display: block;
     text-align: left;
 }
 
