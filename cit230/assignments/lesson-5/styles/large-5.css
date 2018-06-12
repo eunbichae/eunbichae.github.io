@@ -5,10 +5,10 @@
     }
     nav ul {
         display: inline-block;
-        height: 45.6px;
+       
     }
     nav ul li {
-        float: center;
+        float: left;
     }
 }
 
