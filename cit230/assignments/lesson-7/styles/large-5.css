@@ -5,7 +5,19 @@
     }
     nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
     
-/*    nav ul li { float: left; }*/
+
+   
+    .header-container {
+    height: 200px;
+    }
+    
+    header img{
+    margin-left: -5em;
+}
+    
+    header p {
+    margin-left: 3em;
+}
     
     nav ul.hide {
         display: block;

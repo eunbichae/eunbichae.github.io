@@ -37,28 +37,27 @@ footer {
     margin: auto;
 }
 
+.header-container {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    
+}
+
+header img{
+    max-height: 200px;
+   }
+
 header h1 {
+    flex-wrap: wrap;
     color: #ed5840;
-    padding-top: 45px;
-    padding-bottom: 55px;
-    margin-top: 0;
-    background-color: #ffd464;
+    padding-top: 1em;
     max-height: 250px;
 }
 
-header img {
-    float: left;
-}
-
-
-
-header .subheading {
-    margin: 7px;
-    margin-top: -73px;
-    background-color: #ffd464;
-    font-size: 1.1em;
-    color: #fff;
+header p {
     font-style: italic;
+    margin-right: 20px;
 }
 
 nav {
@@ -67,9 +66,7 @@ nav {
     text-align: center;
     line-height: 2.6em;
     font-size: 1.1em;
-    margin-top: 1.7em;
-    /*    -3.7*/
-}
+    }
 
 nav button {
     display: block;
@@ -139,7 +136,7 @@ main h2 {
     margin-top: auto;
     margin-bottom: auto;
     padding-top: 2em;
-    padding-bottom: 10px;
+    padding-bottom: 1.5em;
     font-size: 2em;
 }
 
@@ -220,8 +217,7 @@ article {
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 1em;
-    margin-top: 1em;
-}
+    }
 
 .grid-item {
     border: 1px solid #ffffff;
@@ -239,18 +235,20 @@ footer {
     text-align: center;
     height: 100px;
     color: #ffffff;
-    padding-top: 30px;
+
     margin-top: 4em;
     padding-bottom: 0px;
 }
 
+.text {
+    text-align: center;
+    padding-top: 20px;
+}
+
 .contact {
+    padding-top: 20px;
     line-height: 1.2;
     font-size: .8em;
-    margin-top: -3em;
-    }
-.footer-bar {
-    line-height: 1.2;
-    font-size: .8em;
-    margin-top: -5.5em;
+    padding:0;
+    
     }
