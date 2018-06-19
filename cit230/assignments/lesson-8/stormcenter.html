@@ -15,11 +15,12 @@
 <body>
 
     <header>
-       <div class="header-container">
-        <img src="images/logopic.jpg" alt="logo">
-        <div>
-        <h1>The Weather for Tourist</h1>
-        <p>Good Weather and Fun Places</p></div>
+        <div class="header-container">
+            <img src="images/logopic.jpg" alt="logo">
+            <div>
+                <h1>The Weather for Tourist</h1>
+                <p>Good Weather and Fun Places</p>
+            </div>
         </div>
         <nav>
             <button onclick="toggleMenu()">&#9776;</button>
@@ -35,14 +36,14 @@
     </header>
 
     <main>
-         <h2 class="main-title">Storm Center</h2>
+        <h2>Storm Center</h2>
 
 
-        <form id="stormcenter" action="thanks.html">
+        <form class="stormcenter" action="thanks.html">
             <fieldset>
                 <legend><span>Personal Information</span></legend>
                 <label>
-          <span>Full Name:</span>
+          <span>Full Name</span>
           <input 
             type="text"
             name="fullname"
@@ -54,7 +55,7 @@
           >
         </label>
                 <label>
-          <span>Email:</span>
+          <span>Email</span>
           <input 
             type="email"
             name="email"
@@ -65,19 +66,19 @@
           >
         </label>
                 <label>
-          <span>Phone:</span>
+          <span>Phone</span>
           <input 
             type="tel"
             name="phonenumber"
             value=""
-            placeholder="0155512345"
+            placeholder="0135766789"
             title="Please provide phone number"
             pattern="[0-9]{10,20}" 
             required
           >
         </label>
                 <label>
-          <span>Zip Code:</span>
+          <span>Zip Code</span>
           <input 
             type="number"
             name="zipcode"
@@ -91,7 +92,7 @@
             <fieldset>
                 <legend><span>Storm Information</span></legend>
                 <label>
-          <span>Storm Date:</span>
+          <span>Storm Date</span>
           <input 
             type="date"
             name="date"
@@ -99,14 +100,14 @@
           >
         </label>
                 <label>
-          <span>Storm Type:</span>
+          <span>Storm Type</span>
           <input 
             type="text"
             name="stormtype"
             title="Please provide storm type"
-            list="stormtypes"
+            list="stormtype"
           >
-          <datalist id="stormtypes">
+          <datalist id="stormtype">
             <option value="Flash Flood"></option>
             <option value="Hail"></option>
             <option value="Hurricane"></option>
@@ -115,14 +116,14 @@
           </datalist>
         </label>
                 <div class="stormseverity">
-                    <span>Storm Severity:</span>
+                    <span>Storm Severity</span>
                     <div>
                         <input type="range" name="stormseverity" title="Please choose storm severity (1 to 10)" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                         <span id="stormseverity">5</span>
                     </div>
                 </div>
                 <label>
-          <span>Storm Region:</span>
+          <span>Storm Region</span>
           <select name="stormregion">
             <option disabled>Select Region ...</option>
             <option value="Franklin">Franklin</option>
@@ -131,7 +132,7 @@
           </select>
         </label>
                 <div class="dangerlevel">
-                    <span>User In-Danger Level:</span>
+                    <span>User In-Danger Level</span>
                     <div>
                         <label>
               <input 
@@ -163,7 +164,7 @@
                     </div>
                 </div>
                 <label>
-          <span>Comments:</span>
+          <span>Comments</span>
           <textarea 
             name="comments"
             cols="50"
@@ -172,24 +173,21 @@
           ></textarea>
         </label>
             </fieldset>
-            <input type="submit" class="submitBtn" value="Submit Information">
+            <input type="submit" class="submitBtn" value="Submit">
             <input type="hidden" value="Storm Information" name="subject">
         </form>
     </main>
-      
+
     <footer>
         <div class="contact">
-            <div class="text">The Weather for Tourist<br>
-             123 Main St. 
-Franklin, MU 83454 
-(999) 999-9999 
-contact@theurl.com </div>
+            <div class="text">The Weather for Tourist<br> 123 Main St. Franklin, MU 83454 (999) 999-9999 contact@theurl.com </div>
             <div class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">May 26 2018</span></div>
         </div>
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/stormcenter.js"> </script>
+    <script src="scripts/stormcenter.js">
+    </script>
 
 </body>
 

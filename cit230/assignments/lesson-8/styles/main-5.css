@@ -254,26 +254,32 @@ footer {
     }
 
 /*storm center*/
-form#stormcenter {
+form, .stormcenter {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 1em 1em;
-}
+    margin: .5em .5em;
+    justify-content: space-between;
+    }
 
 fieldset {
     background-color: bisque;
     margin: 1.5em 0;
-    border: #917a56 solid 1px;
+    border: #917a56 dashed 1.2px;
+    border-radius: 3px;
     box-shadow: 5px 5px 20px #cccccc;
     width: 100%;
 }
 
+fieldset span {
+    text-align: left;   
+}
+
 legend {
-    color: ;
-    margin-left: 6%;
-    padding: 0.5em;
-    border: #917a56 solid 1px;
+    color: #333;
+    margin-left: 30px;
+    padding: 0.6em;
+    border: #917a56 dashed 1.5px;
+    border-radius: 3px;
     background-color: bisque;
 }
 
@@ -285,7 +291,7 @@ label,
 }
 
 label span,
-.dangerlevel span,
+.danger span,
 .stormseverity span {
     display: block;
     font-size: 0.9em;
@@ -298,28 +304,24 @@ label input,
 label select,
 label textarea,
 .stormseverity div,
-.dangerlevel div {
-    background-color: #f4f2ef;
+.danger div {
+    background-color:floralwhite;
     color: #333333;
     height: 2.2em;
     padding: .5em .3em .5em 2em;
-    border: solid 1px #b0aaa0;
+    border: groove 1px #b0aaa0;
     font-size: .9em;
     width: 100%;
     max-width: 500px;
-/*    background-image: url(../images/ico_validation.png);*/
-    background-repeat: no-repeat;
-    background-position: 4px -11px
 }
 
-.dangerlevel div {
+.danger div {
     display: flex;
-    align-items: center;
     padding: 0;
     padding-left: 2em;
 }
 
-.dangerlevel label {
+.danger label {
     display: flex;
     align-items: center;
     max-width: 120px;
@@ -327,28 +329,24 @@ label textarea,
     margin: 0;
 }
 
-.dangerlevel input,
-.dangerlevel label span {
-    display: inline;
+
+.danger label span {
+    padding: 0 3em 0 0;
 }
 
-.dangerlevel label span {
-    padding: 0 2em 0 0;
-}
-
-.dangerlevel input {
-    width: 1.1em;
+.danger input {
+    width: 1em;
+    margin-right: .5em;
 }
 
 label textarea {
-    padding-left: .3em;
+    padding-left: .5em;
     background-image: none;
     height: auto;
 }
 
 .stormseverity div {
     display: flex;
-    align-items: center;
 }
 
 .stormseverity input {
@@ -356,43 +354,24 @@ label textarea {
 }
 
 .stormseverity div span {
-    width: 10%;
+    width: 11%;
     text-align: center;
     padding: 0;
 }
 
-input.submitBtn {
+input.submitButton {
     -webkit-appearance: none;
     /*remove the apple mobile default styling*/
     color: #fff;
     border: solid 1px #b0aaa0;
-    border-radius: 7px;
+    border-radius: 3px;
     width: 90%;
-    max-width: 500px;
-    margin-top: .5em;
-    margin-bottom: 1em;
+    max-width: 200px;
+    margin-bottom: 1.5em;
     font-size: 1.1em;
     padding: .6em;
     background-color: sandybrown;
     /* Old browsers */
-    box-shadow: 4px 4px 10px #999;
+    box-shadow: 5px 5px 20px #cccccc;
 }
 
-input:focus,
-select:focus,
-textarea:focus {
-    box-shadow: 1px 1px 4px #999;
-}
-
-input:required {
-    background-position: 4px -61px;
-}
-
-input:focus:invalid {
-    background-position: 4px -111px;
-}
-
-input:required:valid {
-    background-color: #fff;
-    background-position: 4px -161px;
-}

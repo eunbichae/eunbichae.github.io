@@ -38,5 +38,9 @@
     display: block;
     text-align: left;
 }
+    fieldset {
+        width: 48%;
+        justify-content: space-between;
+    }
 
 }
