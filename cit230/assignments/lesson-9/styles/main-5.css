@@ -1,0 +1,377 @@
+/* Delete these CSS comments after reading. */
+
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+/*
+navy #4d505b
+yellow #ffd464
+kakigray #a6a88e
+redorange #ed5840
+brightgreen #21d881
+*/
+
+body {
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 960px;
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header,
+main,
+footer {
+    margin: auto;
+}
+
+.header-container {
+    display: flex;
+    height: 280px;
+    justify-content: center;
+    
+}
+
+header img{
+    max-height: 200px;
+   }
+
+header h1 {
+    flex-wrap: wrap;
+    color: #ed5840;
+    padding-top: 1em;
+    max-height: 250px;
+}
+
+header p {
+    font-style: italic;
+    margin-right: 20px;
+}
+
+nav {
+    background-color: #ed5840;
+    vertical-align: text-bottom;
+    text-align: center;
+    line-height: 2.6em;
+    font-size: 1.1em;
+    }
+
+nav button {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+
+}
+
+nav ul li a {
+    display: flex;
+    flex-direction: column;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+
+
+nav a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #a6a88e;
+}
+
+
+nav ul li.active a {
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    background-color: #a6a88e;
+}
+
+
+nav ul li a:hover {
+    
+}
+
+nav ul {
+    display: block;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+
+main {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 5px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+main h2 {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    font-size: 2em;
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+main figure img {}
+
+main img {
+    width: 100%;
+    border: 2px solid #ffffff
+}
+
+main p {
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.center {
+    align-items: center;
+    margin-bottom: auto;
+    margin-top: 10px
+}
+
+
+.icon {
+    width: 150px;
+}
+
+.sunny{
+    color: #ed5840;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-style: italic;
+}
+    
+
+
+.forecast {
+    display: none;
+    margin-top: 2em;
+}
+
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 20px;
+    font-size: 1.05em;
+}
+
+article {
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.town-article {
+    text-align: left;
+    margin-top: 1.5em;
+    line-height: 1.3em;
+    color: dimgray
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 1em;
+    }
+
+.grid-item {
+    border: 1px solid #ffffff;
+    padding: 1em;
+}
+
+
+.description {
+    display: block;
+    text-align: left;
+}
+
+footer {
+    background-color: #ed5840;
+    text-align: center;
+    height: 100px;
+    color: #ffffff;
+
+    margin-top: 4em;
+    padding-bottom: 0px;
+}
+
+.text {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.contact {
+    padding-top: 20px;
+    line-height: 1.2;
+    font-size: .8em;
+    padding:0;
+    
+    }
+
+/*storm center*/
+form, .stormcenter {
+    display: flex;
+    flex-wrap: wrap;
+    margin: .5em .5em;
+    justify-content: space-between;
+    }
+
+fieldset {
+    background-color: bisque;
+    margin: 1.5em 0;
+    border: #917a56 dashed 1.2px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 20px #cccccc;
+    width: 100%;
+}
+
+fieldset span {
+    text-align: left;   
+}
+
+legend {
+    color: #333;
+    margin-left: 30px;
+    padding: 0.6em;
+    border: #917a56 dashed 1.5px;
+    border-radius: 3px;
+    background-color: bisque;
+}
+
+label,
+.dangerlevel,
+.stormseverity {
+    display: block;
+    margin: 0.5em;
+}
+
+label span,
+.danger span,
+.stormseverity span {
+    display: block;
+    font-size: 0.9em;
+    color: #333333;
+    padding-top: 0.9em;
+    padding-bottom: 0.2em;
+}
+
+label input,
+label select,
+label textarea,
+.stormseverity div,
+.danger div {
+    background-color:floralwhite;
+    color: #333333;
+    height: 2.2em;
+    padding: .5em .3em .5em 2em;
+    border: groove 1px #b0aaa0;
+    font-size: .9em;
+    width: 100%;
+    max-width: 500px;
+}
+
+.danger div {
+    display: flex;
+    padding: 0;
+    padding-left: 2em;
+}
+
+.danger label {
+    display: flex;
+    align-items: center;
+    max-width: 120px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.danger label span {
+    padding: 0 3em 0 0;
+}
+
+.danger input {
+    width: 1em;
+    margin-right: .5em;
+}
+
+label textarea {
+    padding-left: .5em;
+    background-image: none;
+    height: auto;
+}
+
+.stormseverity div {
+    display: flex;
+}
+
+.stormseverity input {
+    width: 90%;
+}
+
+.stormseverity div span {
+    width: 11%;
+    text-align: center;
+    padding: 0;
+}
+
+input.submitButton {
+    -webkit-appearance: none;
+    /*remove the apple mobile default styling*/
+    color: #fff;
+    border: solid 1px #b0aaa0;
+    border-radius: 3px;
+    width: 90%;
+    max-width: 200px;
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+    padding: .6em;
+    background-color: sandybrown;
+    /* Old browsers */
+    box-shadow: 5px 5px 20px #cccccc;
+}
+
