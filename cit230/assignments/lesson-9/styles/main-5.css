@@ -212,24 +212,6 @@ article {
     color: dimgray
 }
 
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 1em;
-    }
-
-.grid-item {
-    border: 1px solid #ffffff;
-    padding: 1em;
-}
-
-
-.description {
-    display: block;
-    text-align: left;
-}
-
 footer {
     background-color: #ed5840;
     text-align: center;
@@ -252,6 +234,27 @@ footer {
     padding:0;
     
     }
+
+
+
+/*gallery*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 1em;
+    }
+
+.grid-item {
+    border: 1px solid #ffffff;
+    padding: 1em;
+}
+
+
+.description {
+    display: block;
+    text-align: left;
+}
+
 
 /*storm center*/
 form, .stormcenter {
@@ -374,4 +377,7 @@ input.submitButton {
     /* Old browsers */
     box-shadow: 5px 5px 20px #cccccc;
 }
+
+/*JSON section*/
+
 

@@ -77,32 +77,24 @@
                 </div>
 -->
        
-       <h3>Weather Summary</h3>
-                <div class="highlow">
-                <p>Temperature: <span>&deg;F</span></p>
-                 </div>
-                <div>
-                <p class="sunny">Sunny</p> <br>
-                <picture>
-                <img class="icon" src="images/LightDiet-sun-icon.jpg" alt="sunnyicon">
-                </picture>
-                </div>
+       <h3>Weather Summary for <span id=place>city</span></h3>
                 
+                <p><span class="sunny" id="description">decription</span></p>
+                <p><span id="weather"></span></p>
+                <img class="icon" src="images/LightDiet-sun-icon.jpg" alt="currentweather" id="weather_icon">
+                
+                <div class="highlow">
+                <p>Current Temperature: <span id="currentTemp">00</span>&deg;F</p>
+                 </div>
                 <div class="conditions">
-                    <p>Precipitation: 25% </p>
-                    <p>
-                        Current Temperature: 
-                        <span id="currentTemperature"></span>&deg;
-                    </p>
-                    <p>
+                   <p>
                         Current Wind Speed:
-                        <span id="windSpeed"></span> mph
+                        <span id="windspeed">00</span> mph
                     </p>
-                    <p>
-                       Current Wind Chill:
-                        <span id="windChill"></span>&deg;
-                    </p>
+                   <p>Wind Chill Factor: <span id="windchill"></span>&deg;F</p>
+                    <p>Precipitation: <span id="preci">25%</span> </p>
                     
+                  
                 </div>
         </section>
              
@@ -137,16 +129,16 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>89&deg;F</td>
-                            <td>87&deg;F</td>
-                            <td>78&deg;F</td>
-                            <td>75&deg;F</td>
-                            <td>72&deg;F</td>
-                            <td>72&deg;F</td>
-                            <td>79&deg;F</td>
-                            <td>83&deg;F</td>
-                            <td>85&deg;F</td>
-                            <td>89&deg;F</td>
+                            <td>&deg;F</td>
+                            <td>&deg;F</td>
+                            <td>&deg;F</td>
+                            <td>&deg;F</td>
+                            <td>&deg;F</td>
+                            <td>&deg;F</td>
+                            <td>&deg;F</td>
+                            <td>&deg;F</td>
+                            <td>&deg;F</td>
+                            <td>&deg;F</td>
                         </tr>
                     </tbody>
                 </table>
@@ -178,7 +170,8 @@ contact@theurl.com </div>
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/windchill.js"> </script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/franklin.js"></script>
 
 </body>
 
