@@ -38,6 +38,21 @@
     display: block;
     text-align: left;
 }
-   
+    
+    
+  #cities {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .articles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 98%;
+    }
+    .articles img {
+        width: 80%;
+    }
 
 }

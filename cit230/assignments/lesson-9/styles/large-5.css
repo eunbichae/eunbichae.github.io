@@ -42,6 +42,27 @@
         width: 48%;
         justify-content: space-between;
     }
+    
+    #cities {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+/*
+    #cities img {
+        100%;
+    }
+*/
+    .articles {
+        display: flex;
+        flex-direction: column;
+    }
+/*
+    .cities :nth-child(even) {
+        display: flex;
+        flex-direction: column;
+    }
+*/
 
 }
 

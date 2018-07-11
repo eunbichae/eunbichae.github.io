@@ -379,5 +379,23 @@ input.submitButton {
 }
 
 /*JSON section*/
+#cities {
+    display: flex;
+    flex-direction: column;
+}
+.articles {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+    padding: 1em;
+    border: 1px solid darkgray;
+}
+.articles h2 {
+    padding-bottom: .5em;
+    padding-top: .5em;
+    }
+
+
 
 
