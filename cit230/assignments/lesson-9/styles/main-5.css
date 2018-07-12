@@ -382,6 +382,7 @@ input.submitButton {
 #cities {
     display: flex;
     flex-direction: column;
+    padding-bottom: 0;
 }
 .articles {
     align-items: center;
