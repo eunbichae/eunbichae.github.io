@@ -1,12 +1,11 @@
 var weatherObject = new XMLHttpRequest();
-weatherObject.open('GET', '//api.openweathermap.org/data/2.5/weather?zip=55333,us&appid=b81f908618b2b4025af2f048992ec988&units=imperial', true);
+weatherObject.open('GET', '//api.openweathermap.org/data/2.5/weather?zip=37067,us&appid=b81f908618b2b4025af2f048992ec988&units=imperial', true);
 weatherObject.send();
 
 weatherObject.onload = function () {
     var weatherdata = JSON.parse(weatherObject.responseText);
     console.log(weatherdata);
 
-  
     
     document.getElementById('description').innerHTML = weatherdata.weather[0].main;
     document.getElementById('place').innerHTML = weatherdata.name;
@@ -41,4 +40,26 @@ weatherObject.onload = function () {
 //        mytbody.appendChild(mytr);  
 //}
 //}
+function getWeather() {
+     var forecast = new XMLHttpRequest();
+    forecast.open('GET', 'https://api.wunderground.com/api/9d9d50d9dae82d0f/forecast10day/q/MN/Franklin.json', true);
+    forecast.send();
+
+    forecast.onload = function () {
+        var forecastcondition = JSON.parse(forecast.responseText).forecast.simpleforecast.forecastday;
+
+        var mytbody = document.querySelector('tbody');
+        var mytr = document.createElement('tr');
+
+        for (i = 0; i < forecastcondition.length; i++) {
+            var mytd = document.createElement('td');
+            mytd.textContent = forecastcondition[i].high.fahrenheit;
+            mytr.appendChild(mytd);
+
+            mytbody.appendChild(mytr);
+        }
+
+    }
+}
+
 
