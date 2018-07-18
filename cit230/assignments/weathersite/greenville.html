@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franklin</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-5.css">
+    <link rel="stylesheet" href="styles/medium-5.css">
+    <link rel="stylesheet" href="styles/large-5.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+       <div class="header-container">
+        <img src="images/logopic.jpg" alt="logo">
+        <div>
+        <h1>The Weather for Tourist</h1>
+        <p>Good Weather and Fun Places</p></div>
+        </div>
+        <nav>
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfiled.html">Springfield</a></li>
+                <li><a href="../lesson-8/stormcenter.html">Storm Ceter</a></li>
+                <li><a href="../lesson-7/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 >The City of Greenville</h2>
+        
+        <picture>
+                    <source srcset="images/franklin-small.jpg" media="(max-width: 600px)">
+                    <source srcset="images/franklin-medium.jpg" media="(max-width: 1024px)">
+                    <source srcset="images/franklin-large.jpg">
+                    <img src="images/franklin-large.jpg" id="main-image" alt="Franklin image">
+            </picture>
+            
+        <section class="firstrow">
+         
+<!--
+                <h3>Weather Summary</h3>
+                <div class="highlow">
+                <p>High: 52&deg; </p> 
+                <p>Low: 25&deg; </p>
+                </div>
+                <div>
+                <p class="sunny">Sunny</p> <br>
+                <picture>
+                <img class="icon" src="images/LightDiet-sun-icon.jpg" alt="sunnyicon">
+                </picture>
+                </div>
+                
+                <div class="conditions">
+                    <p>Precipitation: 25% </p>
+                    <p>
+                        Current Temperature: 
+                        <span id="currentTemperature"></span>&deg;
+                    </p>
+                    <p>
+                        Current Wind Speed:
+                        <span id="windSpeed"></span> mph
+                    </p>
+                    <p>
+                       Current Wind Chill:
+                        <span id="windChill"></span>&deg;
+                    </p>
+                    
+                </div>
+-->
+       
+       <h3>Weather Summary for <span id=place>city</span></h3>
+                
+                <p><span class="sunny" id="description">decription</span></p>
+                <p><span id="weather"></span></p>
+                <img class="icon" src="images/LightDiet-sun-icon.jpg" alt="currentweather" id="weather_icon">
+                
+                <div class="highlow">
+                <p>Current Temperature: <span id="currentTemp">00</span>&deg;F</p>
+                 </div>
+                <div class="conditions">
+                   <p>
+                        Current Wind Speed:
+                        <span id="windspeed">00</span> mph
+                    </p>
+                   <p>Wind Chill Factor: <span id="windchill"></span>&deg;F</p>
+                    <p>Precipitation: <span id="preci">25%</span> </p>
+                    
+                  
+                </div>
+        </section>
+             
+           
+<!--
+                <img src="images/franklin-small.jpg" alt="weatherpic"
+                srcset="images/franlkin-large.jpg 1200w,
+                images/franlkin-medium.jpg 800w,
+                images/franlkin-small.jpg 400w"
+                sizes="98vw">
+                
+-->
+            
+
+        <section class="forecast">
+            <div>
+                <h3 class="center">10 day forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th> 1</th>
+                            <th> 2</th>
+                            <th> 3</th>
+                            <th> 4</th>
+                            <th> 5</th>
+                            <th> 6</th>
+                            <th> 7</th>
+                            <th> 8</th>
+                            <th> 9</th>
+                            <th> 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&deg;F</td>
+                            <td>&deg;F</td>
+                            <td>&deg;F</td>
+                            <td>&deg;F</td>
+                            <td>&deg;F</td>
+                            <td>&deg;F</td>
+                            <td>&deg;F</td>
+                            <td>&deg;F</td>
+                            <td>&deg;F</td>
+                            <td>&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <article>
+            <h3>Greenville Breaks Record</h3>
+            <img src="images/greenville.jpg" alt="greenville">
+
+            <p class="town-article">Modern weather predictions are a combination of computer-based models and human experience. As a rule of thumb, the closer a weather forecast is in time, the more accurate it is. Long-term predictions have a larger margin of error because there are more unknown variables.<br>
+
+This means that our short- and medium-range forecasts are the most accurate. Long-range forecasts predicting the weather for more than 7 days in advance should be seen as a rough guide, as the accuracy of weather predictions falls considerably around the one-week mark.<br>
+
+If you notice a weather forecast that is repeatedly incorrect, please let us know.</p>
+        </article>
+    </main>
+
+   
+    <footer>
+        <div class="contact">
+            <div class="text">The Weather for Tourist<br>
+             123 Main St. 
+Franklin, MU 83454 
+(999) 999-9999 
+contact@theurl.com </div>
+            <div class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">May 26 2018</span></div>
+        </div>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/greenville.js"></script>
+
+</body>
+
+</html>
