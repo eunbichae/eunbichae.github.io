@@ -1,0 +1,68 @@
+@media only screen and (min-width: 64em) {
+
+    section.forecast {
+        display: block;
+    }
+    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+
+   
+    .header-container {
+    height: 200px;
+    }
+    
+    header img{
+    margin-left: -5em;
+}
+    
+    header p {
+    margin-left: 3em;
+}
+    
+    nav ul.hide {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .grid-container {
+/*    display: grid;*/
+    grid-template-columns: 1fr 1fr 1fr;
+}
+    
+    .description {
+    display: block;
+}
+    .grid-item:hover {
+     box-shadow: 5px 6px 5px #999999;   
+    }
+    
+     fieldset {
+        width: 48%;
+        justify-content: space-between;
+    }
+    
+    #cities {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+/*
+    #cities img {
+        100%;
+    }
+*/
+    .articles {
+        display: flex;
+        flex-direction: column;
+    }
+/*
+    .cities :nth-child(even) {
+        display: flex;
+        flex-direction: column;
+    }
+*/
+
+}
+

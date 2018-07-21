@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franklin</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-5.css">
+    <link rel="stylesheet" href="styles/medium-5.css">
+    <link rel="stylesheet" href="styles/large-5.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+       <div class="header-container">
+        <img src="images/logopic.jpg" alt="logo">
+        <div>
+        <h1>The Weather for Tourist</h1>
+        <p>Good Weather and Fun Places</p></div>
+        </div>
+        <nav>
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfiled.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Ceter</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       <h2>Gallery</h2>
+        <div class="grid-container">
+            <div class="grid-item">              
+                <img src="https://images.unsplash.com/photo-1421091242698-34f6ad7fc088?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2a2af5e990e8d42cea0e92ca5bebcdda&auto=format&fit=crop&w=1000&q=60" alt="sunny">
+                <p class="description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://images.unsplash.com/photo-1508669599492-fd102379df98?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dd6cb8d58d65077bf7d308e697664365&auto=format&fit=crop&w=1000&q=60" alt="rainy">
+                <p class="description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </p>
+            </div>
+            <div class="grid-item">
+                <img src="https://images.unsplash.com/photo-1525776759712-7b066ce45de0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d4125a04de56c5207d3726e19858c83f&auto=format&fit=crop&w=1000&q=60" alt="cloudy">
+                <p class="description">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://images.unsplash.com/photo-1513297397015-426749e1d485?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9194fe37248a7ffead4a6cca22a269d8&auto=format&fit=crop&w=1000&q=60" alt="snow">
+                <p class="description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+            </div>
+            <div class="grid-item">
+               <img src="https://images.unsplash.com/photo-1470596914251-afb0b4510279?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2d891d3197dceea7e61777ebd80e503c&auto=format&fit=crop&w=1000&q=60" alt="sunset">
+                <p class="description">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://images.unsplash.com/16/unsplash_5252b10dacd20_1.JPG?ixlib=rb-0.3.5&s=362f71fdf38a7a19dd97807c078257d8&auto=format&fit=crop&w=1000&q=60" alt="lightening">
+                <p class="description">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+            </div>
+        </div>
+    </main>
+
+   
+   <footer>
+        <div class="contact">
+            <div class="text">The Weather for Tourist<br>
+             123 Main St. 
+Franklin, MU 83454 
+(999) 999-9999 
+contact@theurl.com </div>
+            <div class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">May 26 2018</span></div>
+        </div>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+        
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/wayfinding.js"></script>
+  <script src="scripts/modularize.js"></script>
+
+</body>
+
+</html>

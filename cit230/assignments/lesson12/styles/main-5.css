@@ -27,7 +27,7 @@ nav,
 main,
 footer {
     /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-    max-width: 960px;
+    max-width: 100%;
     /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
@@ -66,7 +66,7 @@ nav {
     text-align: center;
     line-height: 2.6em;
     font-size: 1.1em;
-    margin: 0 auto;
+/*    */
     }
 
 nav button {
