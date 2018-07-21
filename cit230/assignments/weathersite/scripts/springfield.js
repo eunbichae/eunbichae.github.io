@@ -23,7 +23,7 @@ function getWeather() {
 
         var forecast = new XMLHttpRequest();
         forecast.responseType = 'json';
-        forecast.open('GET', 'http://api.openweathermap.org/data/2.5/forecast?zip=62629,us&appid=b81f908618b2b4025af2f048992ec988&units=imperial', true);
+        forecast.open('GET', 'https://api.openweathermap.org/data/2.5/forecast?zip=62629,us&appid=b81f908618b2b4025af2f048992ec988&units=imperial', true);
         forecast.send();
 
 
