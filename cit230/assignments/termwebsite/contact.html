@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head w3-include-html="modules/head.html">
+    <!--
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-5.css">
+    <link rel="stylesheet" href="styles/medium-5.css">
+    <link rel="stylesheet" href="styles/large-5.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+-->
+    <title>Greenville</title>
+</head>
+
+<body>
+
+    <header w3-include-html="modules/header.html">
+        <!--
+       <div class="header-container">
+        <img src="images/logopic.jpg" alt="logo">
+        <div>
+        <h1>The Weather for Tourist</h1>
+        <p>Good Weather and Fun Places</p></div>
+        </div>
+-->
+    </header>
+
+    <nav w3-include-html="modules/nav.html">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <!--
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfiled.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Ceter</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+-->
+    </nav>
+    <main>
+        <h2>Contact us</h2>
+
+        <div class="map">
+
+            <iframe class="item1" id="if" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9314410405796!2d-111.09291154913326!3d45.67227662745399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1531617409464"></iframe>
+
+            <div class="item1" id="con">
+
+                <form class="stormcenter" action="thanks.html">
+                    <fieldset>
+                       <label>
+          <span>Full Name</span>
+          <input 
+            type="text"
+            name="fullname"
+            value=""
+            placeholder="Full Name"
+            autofocus
+            title="Please provide full name"
+            pattern="[a-zA-Z -._]{5,99}" required
+          >
+        </label>
+
+                        <label>
+          <span>Email</span>
+          <input 
+            type="email"
+            name="email"
+            value=""
+            placeholder="person@demo.com"
+            title="Please provide email address"
+            required
+          >
+        </label>
+
+
+
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+      
+      <option value="usa">USA</option>
+      <option value="canada">Canada</option>
+    </select>
+
+                      <label>
+          <span>Comments</span>
+          <textarea 
+            name="comments"
+            cols="50"
+            rows="5"
+            placeholder="Please enter additional information."
+          ></textarea>
+        </label>
+
+                        <input type="submit" value="Submit" name="sbutton">
+                    </fieldset>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <footer w3-include-html="modules/footer.html">
+        <!--
+        <div class="contact">
+            <div class="text">The Weather for Tourist<br>
+             123 Main St. 
+Franklin, MU 83454 
+(999) 999-9999 
+contact@theurl.com </div>
+            <div class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">May 26 2018</span></div>
+        </div>
+-->
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+
+
+
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/wayfinding.js"></script>
+    <script src="scripts/modularize.js"></script>
+
+</body>
+
+</html>
