@@ -1,6 +1,6 @@
 (function () {
     var section = document.querySelector('#cities');
-    var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+    var requestURL = 'js/home.json';
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
@@ -28,9 +28,9 @@
             myDiv2.className = "ImgDiv";
             var myImage = document.createElement('img');
             myImage.setAttribute('width', '100%');
-            if (towns[i].name == "Springfield") {
+            if (towns[i].name == "Sales") {
                 myImage.setAttribute('alt', 'springfield-city');
-                myImage.setAttribute('src', 'images/springfield.jpg');
+                myImage.setAttribute('src', 'images/bike1.jpg');
             } else if (towns[i].name == "Greenville") {
                 myImage.setAttribute('alt', 'greenville-city');
                 myImage.setAttribute('src', 'images/greenville.jpg');
@@ -40,10 +40,10 @@
             }
 
             myH2.textContent = towns[i].name;
-            myPara1.textContent = 'Moto: ' + towns[i].motto;
-            myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
-            myPara3.textContent = 'Population: ' + towns[i].currentPopulation;
-            myPara4.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
+            myPara1.textContent = towns[i].motto;
+            myPara2.textContent = towns[i].yearFounded;
+            myPara3.textContent = towns[i].currentPopulation;
+            myPara4.textContent = towns[i].averageRainfall;
 
             myDiv1.appendChild(myH2);
             myDiv1.appendChild(myPara1);

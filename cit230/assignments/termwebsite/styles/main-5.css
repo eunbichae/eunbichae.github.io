@@ -18,7 +18,7 @@ brightgreen #21d881
 
 body {
     font-size: 16px;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     
 }
 
@@ -41,6 +41,7 @@ footer {
     display: flex;
     height: 280px;
     justify-content: center;
+    background-color: #4d505b;
     
 }
 
@@ -50,8 +51,8 @@ header img{
 
 header h1 {
     flex-wrap: wrap;
-    color: #ed5840;
-    padding-top: 1em;
+    color: #ffffff;
+    padding-top: 2em;
     max-height: 250px;
 }
 
@@ -61,11 +62,12 @@ header p {
 }
 
 nav {
-    background-color: #ed5840;
+    background-color: #4d505b;
     vertical-align: text-bottom;
     text-align: center;
     line-height: 2.6em;
     font-size: 1.1em;
+    padding-bottom: 1em;
 /*    */
     }
 
@@ -96,16 +98,16 @@ nav ul li a {
 
 nav a:hover {
     color: white;
-    text-decoration: none;
-    background-color: #a6a88e;
+    text-decoration: underline;
+    
 }
 
 
 nav ul li.active a {
     text-decoration: none;
     color: white;
-    text-decoration: none;
-    background-color: #a6a88e;
+    text-decoration: underline;
+    
 }
 
 
@@ -124,6 +126,7 @@ nav ul.hide {
 
 main {
     text-align: center;
+    width: 960px;
 }
 
 section {
@@ -214,7 +217,7 @@ article {
 }
 
 footer {
-    background-color: #ed5840;
+    background-color: #4d505b;
     text-align: center;
     height: 100px;
     color: #ffffff;

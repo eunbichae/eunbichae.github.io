@@ -1,5 +1,6 @@
 w3.includeHTML(function() {
-    currentDate();
+    setCurrentDate();
     setActiveLink();
+    getWeather();
     
 });
