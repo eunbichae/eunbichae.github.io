@@ -1,0 +1,24 @@
+var services = [{
+        "name": "Basic Tune-Up",
+        "price": 39.99
+        },
+    {
+        "name": "Premium Tune-Up",
+        "price": 69.99
+        },
+    {
+        "name": "Brake System Tune-Up",
+        "price": 24.99
+        },
+    {
+        "name": "Drivetrain Tune-Up",
+        "price": 24.99
+        },
+    {
+        "name": "Bike Build",
+        "price": 39.99
+        }
+
+    ];
+
+myFunction(services);

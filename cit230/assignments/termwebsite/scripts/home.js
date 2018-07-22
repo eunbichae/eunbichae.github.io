@@ -29,14 +29,18 @@
             var myImage = document.createElement('img');
             myImage.setAttribute('width', '100%');
             if (towns[i].name == "Sales") {
-                myImage.setAttribute('alt', 'springfield-city');
+                myImage.setAttribute('alt', 'salespic');
                 myImage.setAttribute('src', 'images/bike1.jpg');
-            } else if (towns[i].name == "Greenville") {
-                myImage.setAttribute('alt', 'greenville-city');
-                myImage.setAttribute('src', 'images/greenville.jpg');
-            } else if (towns[i].name == "Franklin") {
-                myImage.setAttribute('alt', 'franklin-city');
-                myImage.setAttribute('src', 'images/frankline.jpg');
+            } else if (towns[i].name == "Event") {
+                myImage.setAttribute('alt', 'eventpic');
+                myImage.setAttribute('src', 'images/event-1.jpg');
+            } else if (towns[i].name == "Tours") {
+                myImage.setAttribute('alt', 'tourpic');
+                myImage.setAttribute('src', 'images/tour1.jpg');
+            }
+            else if (towns[i].name == "Contact") {
+                myImage.setAttribute('alt', 'logopic');
+                myImage.setAttribute('src', 'images/bike-logo-06.png');
             }
 
             myH2.textContent = towns[i].name;

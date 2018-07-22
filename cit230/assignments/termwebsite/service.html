@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="styles/large-5.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 -->
-<title>Gallery</title>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+   
+<title>Service</title>
 </head>
 
 <body>
 
-     <header w3-include-html="modules/header.html">
+    <header w3-include-html="modules/header.html">
 <!--
        <div class="header-container">
         <img src="images/logopic.jpg" alt="logo">
@@ -43,51 +45,21 @@
         </nav>
 
     <main>
-       <h2>Bike Trip</h2>
-       <h3> Bring your own bike!</h3>
-        <div class="grid-container">
-            <div class="grid-item">              
-                <img src="images/tour1.jpg" alt="adventure">
-                <p class="description"><b>INTERNATIONAL SELKIRK LOOP BIKE TOUR</b> <br><br>
-Trip Details <br>
-Days: 6 days - Sunday to Friday (Couples/Friends/Solo)<br>
-
-Levels: Active Level 1-4 <br>
-
-Meals: All breakfasts, 4 dinners, 3 lunches<br>
-
-Daily Mileage: Standard route: average 55, range 40-80<br>
-
-Start/End: Italy and Austria (Bolzano)<br>
-
-2018 Departures August 5 / August 26<br>
-
-Price $4.098</p>
-            </div>
-            <div class="grid-item">
-                <img src="images/tour2.jpg" alt="tour">
-                <p class="description"><b>CALIFORNIA COAST BIKE TOUR</b> <br><br>
-Trip Details <br>
-Days: 6 days - Sunday to Friday (Couples/Friends/Solo)<br>
-
-Levels: Active Level 2-4 <br>
-
-Meals: All breakfasts, 4 dinners, 5 lunches<br>
-
-Daily Mileage: Standard route: average 17<br>
-
-Start/End: SanFrancisco / Santa Barbara<br>
-
-2018 Departures September 9 / October 7<br>
-
-Price $3,498</p>
-            </div>
+        <h2> Bike Services Pricing</h2>
+        
+        <table id="servicepg">
             
+        </table>
+            
+<!--
+         <div id="bicycle">
+            <img src="images/bicycle-01-01.png" alt="bicycle">
         </div>
+-->
     </main>
 
    
-   <footer w3-include-html="modules/footer.html">
+    <footer w3-include-html="modules/footer.html">
 <!--
         <div class="contact">
             <div class="text">The Weather for Tourist<br>
@@ -101,10 +73,13 @@ contact@theurl.com </div>
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
-        
+     
+
     <script src="scripts/w3.js"></script>
     <script src="scripts/wayfinding.js"></script>
   <script src="scripts/modularize.js"></script>
+   <script src="js/services.js"></script>
+    <script src="js/services.json"></script>
 
 </body>
 

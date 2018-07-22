@@ -14,10 +14,10 @@
   },
   {
     "name": "Event",
-    "motto": "Green is our way of life.",
-    "yearFounded": 1805,
-    "currentPopulation": 33458,
-    "averageRainfall": 25,
+    "motto": "South Florida CycleFest",
+    "yearFounded": "Sunday, November 11",
+    "currentPopulation": "Level: Various",
+    "averageRainfall": "31 Miles & 62 Miles",
     "events" : [
       "February 10-12: Greenbration",
       "May 8 - 18: Greenville Founder Days",
@@ -28,10 +28,10 @@
 
   {
     "name": "Tours",
-    "motto": "Positive Placement in Placerton.",
-    "yearFounded": 1946,
-    "currentPopulation": 512,
-    "averageRainfall": 39,
+    "motto": "CALIFORNIA COAST BIKE TOUR",
+    "yearFounded": "6 days - Sunday to Friday",
+    "currentPopulation": "Active Level 1-4 ",
+    "averageRainfall": "Price $3,498",
     "events" : [
       "July 4: A Blaze of Glory",
       "October 20: Fall through Fall"
@@ -39,11 +39,11 @@
   },
 
   {
-    "name": "contact",
-    "motto": "Where everyone is lifted.",
-    "yearFounded": 1826,
-    "currentPopulation": 17852,
-    "averageRainfall": 17,
+    "name": "Contact",
+    "motto": "The Mountain Spoke",
+    "yearFounded": "3950 Valley Commons Drive Bozeman, MT",
+    "currentPopulation": "mountainspoke.com",
+    "averageRainfall": "(210) 956-3567",
     "events" : [
       "January 8: Spring into Winter",
       "April 10-20: Celebration of Life",

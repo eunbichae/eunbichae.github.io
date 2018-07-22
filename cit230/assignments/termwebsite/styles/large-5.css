@@ -28,7 +28,7 @@
     
     .grid-container {
 /*    display: grid;*/
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
     
     .description {
@@ -39,8 +39,9 @@
     }
     
      fieldset {
-        width: 48%;
-        justify-content: space-between;
+        width: 500px;
+         margin: 0 auto;
+/*        justify-content: space-between;*/
     }
     
     #cities {

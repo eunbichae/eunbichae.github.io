@@ -39,6 +39,11 @@
     text-align: left;
 }
     
+     fieldset {
+        width: 500px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
     
   #cities {
         display: flex;
